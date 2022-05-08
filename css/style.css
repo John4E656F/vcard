@@ -1,0 +1,286 @@
+/* Global Tags */
+
+* {
+    margin: auto;
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img, a, button {
+    display: block;
+}
+
+button {
+    border: none;
+    background: none;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #121212;
+}
+
+h2, h3, h4, h5 {
+    color: #fafafa;
+    text-transform: capitalize;
+}
+
+.sidebar, article {
+    background-color: #1e1e1f;
+    border: 1px solid #383838;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: -4px 8px 24px #00000040;
+}
+
+.hr {
+    width: 100%;
+    height: 1px;
+    background-color: #383838;
+    margin: 16px 0;
+}
+
+/* Sidebar/Topbar */
+
+.sidebar {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sidebar-info {
+    /* border:  1px solid #fdfdfd; */
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+
+.pfp-box {
+    /* border:  1px solid #fdfdfd; */
+    background-color: linear-gradient(
+        to bottom right, 
+        #3f3f40 3%, 
+        #303030 97%
+      );
+    border-radius: 20px;
+    border:  1px solid #383838;
+    box-shadow: -4px 8px 24px #00000040;
+}
+
+.pfp-box, img {
+    /* border:  1px solid #fdfdfd; */
+    max-width: 80px;
+    margin-right: -3px;
+    margin-top: 5px;
+}
+
+/* Used grid to move .info .title to the left side */
+.info {
+    /* border:  1px solid #ffffff; */
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+
+.info .name {
+    /* border:  1px solid #ffffff; */
+    grid-column-start: 1;
+    grid-column-end: -1;
+    color: #fdfdfd;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: -0.25px;
+    margin-bottom: 10px;
+}
+
+.info .title {
+    /* border:  1px solid #fffefe; */
+    grid-auto-rows: 2;
+    color: #dbdbdb;
+    background-color: #2b2b2c;
+    font-size: 11px;
+    font-weight: 300px;
+    width: max-content;
+    padding: 3px 12px;
+    border-radius: 8px;
+    box-shadow: -4px 8px 24px #00000040;
+}
+
+
+/* Sidebar/Topbar Contact Info */
+
+.icon-box {
+    position: relative;
+    background-color: linear-gradient(
+        to bottom right, 
+        #404040 0%, 
+        #40404000 50%
+      );
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    font-size: 16px;
+    color: #ffdb70;
+    box-shadow: -4px 8px 24px #00000040;
+    z-index: 1;
+    background-color: #383838;
+}
+
+.icon-box i {
+    width: 35px;
+}
+
+
+.contacts-list{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+.contact-item {
+    display: flex;
+    min-width: 100%;
+    align-items: center;
+    gap: 16px;
+}
+
+.contact-info {
+    max-width: 100%;
+    width: 100%;
+}
+
+.contact-title {
+    color: #d6d6d6b3;
+    font-size: 11px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+
+.contact-info .contact-link, address {
+    color: #fafafa;
+    font-size: 13px;
+}
+
+.contact-info address {
+    font-style: normal;
+}
+
+.social-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 4px;
+    padding-left: 7px;
+}
+
+.social-list .social-link {
+    color: #d6d6d6b3;
+    font-size: 18px;
+}
+
+/* Navbar */
+.navbar {  
+    position: fixed;
+    bottom: 0;
+    left: 0px;
+    width: 100%;
+    background: #2b2b2cbf;
+    backdrop-filter: blur(10px);
+    border: 1px solid #383838;
+    border-radius: 12px 12px 0 0;
+    box-shadow: #00000040;
+    z-index: 5;
+}
+
+.navbar-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0px;
+}
+
+.navbar-link {
+    color: #d6d6d6;
+    font-size: 11px;
+    padding: 20px 7px;
+    transition: color 0.5s ease-in-out;
+}
+
+.navbar-link:hover, .navbar-link:focus{
+    color: #ffdb70;
+}
+
+.navbar:active {
+    color: #ffdb70;
+}
+
+/* About */
+.about .h2-about{
+    margin-bottom: 15px;
+}
+
+.about-info {
+    color: #d6d6d6;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.about-info p {
+    margin-bottom: 15px;
+}
+
+/* what i do */
+.service {
+    margin-bottom: 35px;
+}
+
+.h3-service{
+    margin-bottom: 20px;
+}
+
+.service-list{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.service-item {
+    position: relative;
+    background-color: linear-gradient(
+        to bottom right, 
+        #404040 0%, 
+        #40404000 50%
+      );
+    padding: 20px;
+    box-shadow: -4px 8px 24px #00000040;
+}
+
+.service-icon-box {
+    margin-bottom: 10px;
+}
+
+.service-icon-box i {
+    margin: auto;
+}
