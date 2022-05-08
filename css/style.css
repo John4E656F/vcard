@@ -44,7 +44,7 @@ h2, h3, h4, h5 {
     border: 1px solid #383838;
     border-radius: 20px;
     padding: 15px;
-    box-shadow: -4px 8px 24px #00000040;
+    box-shadow: -4px 8px 24px #8b922540;
 }
 
 .hr {
@@ -275,12 +275,28 @@ h2, h3, h4, h5 {
       );
     padding: 20px;
     box-shadow: -4px 8px 24px #00000040;
+    border-radius: 14px;
 }
 
 .service-icon-box {
     margin-bottom: 10px;
 }
 
-.service-icon-box i {
+.service-icon-box img {
     margin: auto;
+}
+
+svg{
+    fill: #ffdb70;
+}
+
+
+.service-item-title {
+    margin-bottom: px;
+}
+.service-item-text {
+    color: #d6d6d6;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.6;
 }
