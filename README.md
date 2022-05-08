@@ -1,5 +1,5 @@
 # vcard-john
-[![Check out my Vcard](https://giphy.com/gifs/funny-lol-game-of-thrones-a2euXnuLIgVQA "John's Virtual Card website")](john4e656f.github.io/vcard)
+[![Check out my Vcard](https://media2.giphy.com/media/a2euXnuLIgVQA/giphy.gif?cid=ecf05e47d18wtt3i6lvx53h7qwrk6dqoud5y9jlk5pouxhym&rid=giphy.gif&ct=g "John's Virtual Card website")](john4e656f.github.io/vcard)
 
 ### Resources
 
